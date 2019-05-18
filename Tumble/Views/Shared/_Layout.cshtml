@@ -59,12 +59,13 @@ body {
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Profile</a>
-        <a href="#">FAQ</a>
-        <a href="#">Event</a>
-        <a href="#">Task</a>
-        <a href="#">Report</a>
-        <a href="#">Team Management</a>
+        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+        <li>@Html.ActionLink("Profile", "Contact", "Home")</li>
+        <li>@Html.ActionLink("FAQ", "FAQ", "Home")</li>
+        <li>@Html.ActionLink("Event", "Event", "Home")</li>
+        <li>@Html.ActionLink("Task", "Task", "Home")</li>
+        <li>@Html.ActionLink("Report", "Report", "Home")</li>
+        <li>@Html.ActionLink("Team Management", "Team Management", "Home")</li>
     </div>
 
     <div id="main">
