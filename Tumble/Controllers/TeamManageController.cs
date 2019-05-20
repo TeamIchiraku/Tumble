@@ -13,5 +13,11 @@ namespace Tumble.Controllers
         {
             return View();
         }
+
+        // GET: TeamManage
+        public ActionResult AddUser()
+        {
+            return View();
+        }
     }
 }
