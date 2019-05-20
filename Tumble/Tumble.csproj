@@ -136,6 +136,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="References\MainSplashPage %282%29.png" />
     <Content Include="References\SummaryEventPage.png" />
+    <Content Include="References\Team Management.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
