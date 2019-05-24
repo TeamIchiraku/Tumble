@@ -135,6 +135,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="References\FAQ%28Admin%29.png" />
     <Content Include="References\Invitation.png" />
     <Content Include="References\MainSplashPage %282%29.png" />
     <Content Include="References\SummaryEventPage.png" />
