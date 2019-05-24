@@ -171,6 +171,7 @@
     <Content Include="Views\Event\Index.cshtml" />
     <Content Include="Views\TeamManage\Index.cshtml" />
     <Content Include="Views\TeamManage\AddUser.cshtml" />
+    <Content Include="Views\Home\FAQ.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
