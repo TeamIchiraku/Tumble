@@ -13,5 +13,11 @@ namespace Tumble.Controllers
         {
             return View();
         }
+
+        // GET: Single Event
+        public ActionResult SingleEvent()
+        {
+            return View();
+        }
     }
 }

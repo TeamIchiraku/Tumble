@@ -140,6 +140,7 @@
     <Content Include="References\Invitation.png" />
     <Content Include="References\MainSplashPage %282%29.png" />
     <Content Include="References\Report.png" />
+    <Content Include="References\SingleEvent.png" />
     <Content Include="References\SummaryEventPage.png" />
     <Content Include="References\Team Management.png" />
     <Content Include="Scripts\bootstrap.js" />
@@ -175,6 +176,7 @@
     <Content Include="Views\TeamManage\AddUser.cshtml" />
     <Content Include="Views\Home\FAQ.cshtml" />
     <Content Include="Views\Report\Index.cshtml" />
+    <Content Include="Views\Event\SingleEvent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
