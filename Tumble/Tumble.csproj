@@ -142,6 +142,7 @@
     <Content Include="References\MainSplashPage %282%29.png" />
     <Content Include="References\Report.png" />
     <Content Include="References\SingleEvent.png" />
+    <Content Include="References\Summary Task Page%28Admin version%29.png" />
     <Content Include="References\SummaryEventPage.png" />
     <Content Include="References\Team Management.png" />
     <Content Include="Scripts\bootstrap.js" />
