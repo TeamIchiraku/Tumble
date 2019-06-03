@@ -3,8 +3,62 @@
     ViewBag.Title = "Index";
 }
 
-<div class="thumbnail">
-    <a href="~/References/Summary Task Page(Admin version).png">
-        <img src="~/References/Summary Task Page(Admin version).png" style="width:100%">
-    </a>
-</div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            Dropdown button
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </div>
+                </div>
+
+                <br />
+
+                <div class="row" style="height: 250px; overflow-y: scroll;">
+                    <a href="~/References/Summary Task Page(Admin version).png">
+                        <img src="~/References/Summary Task Page(Admin version).png" style="width:100%">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-1"></div>
+
+            <div class="col-lg-3">
+                <div class="row">
+                    <img src="~/References/calendar.png" style="width:100%">
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8">
+                        <a href='@Url.Action("Index", "Login")' class="btn btn-primary btn-lg btn-block" role="button">Add Tasks</a>
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+                <wbr />
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8">
+                        <a href='@Url.Action("Index", "Login")' class="btn btn-primary btn-lg btn-block" role="button">Import Tasks</a>
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+                <wbr />
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8">
+                        <a href='@Url.Action("Index", "Login")' class="btn btn-primary btn-lg btn-block" role="button">Export Tasks</a>
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>

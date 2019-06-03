@@ -138,8 +138,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="References\calendar.png" />
     <Content Include="References\FAQ%28Admin%29.png" />
-    <Content Include="References\head title.PNG" />
+    <Content Include="References\head title.png" />
     <Content Include="References\Invitation.png" />
     <Content Include="References\MainSplashPage %282%29.png" />
     <Content Include="References\Report.png" />
@@ -182,6 +183,8 @@
     <Content Include="Views\Report\Index.cshtml" />
     <Content Include="Views\Event\SingleEvent.cshtml" />
     <Content Include="Views\Task\Index.cshtml" />
+    <Content Include="Views\Login\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_LayoutLogin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
