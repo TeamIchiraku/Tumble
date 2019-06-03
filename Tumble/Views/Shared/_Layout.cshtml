@@ -101,9 +101,14 @@ body {
     <footer>
 
         <div class="row">
-            <div class="col-lg-4">&copy; @DateTime.Now.Year - Tumble</div>
-            <div class="col-lg-8">  
-                <button type="button" class="btn btn-primary btn-block">Chat Room</button> 
+            <div class="col-lg-2">&copy; @DateTime.Now.Year - Tumble</div>
+            <div class="col-lg-8">
+                <button type="button" class="btn btn-primary btn-block">Chat Room</button>
+            </div>
+            <div class="col-lg-2">
+                <a href='@Url.Action("Index", "Home")'>
+                    <button type="button" class="btn btn-primary btn-block">Logout</button>
+                </a>
             </div>
         </div>
     </footer>
