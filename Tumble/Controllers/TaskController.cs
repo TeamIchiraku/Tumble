@@ -14,8 +14,9 @@ namespace Tumble.Controllers
             return View();
         }
 
-       
+        public ActionResult SingleTask()
+        {
+            return View();
+        }
     }
-
-    
 }

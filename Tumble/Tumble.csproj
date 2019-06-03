@@ -126,6 +126,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\HomeViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -137,19 +138,19 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="One Event.png" />
     <Content Include="References\calendar.png" />
+    <Content Include="References\dreamteam_logo.png" />
     <Content Include="References\FAQ%28Admin%29.png" />
     <Content Include="References\head title.png" />
+    <Content Include="References\Housing.jpg" />
     <Content Include="References\Invitation.png" />
     <Content Include="References\MainSplashPage %282%29.png" />
-    <Content Include="References\One Event Content.png" />
-    <Content Include="References\One Event.png" />
+    <Content Include="References\Maps.PNG" />
     <Content Include="References\Report.png" />
     <Content Include="References\SingleEvent.png" />
-    <Content Include="References\Summary Events Content.png" />
     <Content Include="References\Summary Task Page%28Admin version%29.png" />
     <Content Include="References\SummaryEventPage.png" />
+    <Content Include="References\TaskPage.PNG" />
     <Content Include="References\Team Management.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -188,10 +189,10 @@
     <Content Include="Views\Task\Index.cshtml" />
     <Content Include="Views\Login\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_LayoutLogin.cshtml" />
+    <Content Include="Views\Task\SingleTask.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
     <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
   <ItemGroup>
