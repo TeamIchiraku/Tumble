@@ -1,9 +1,259 @@
-﻿@{
+﻿@model Tumble.Models.HomeViewModel
+@{
     ViewBag.Title = "Home";
 }
 
-<div class="thumbnail">
-    <a href="~/References/MainSplashPage (2).png">
-        <img src="~/References/MainSplashPage (2).png" alt="Splash" style="width:100%">
-    </a>
+
+<div>
+    <div style="width:70%;Text-align:left;float:left;">
+        <div>
+            <div style="width:100%;Text-align:center;float:left;">
+                <div style="width:70%;Text-align:center;float:left;">
+                    <h1>@Model.EventName - @Model.EventDate</h1>
+                </div>
+
+                <div style="Text-align:right;Width:30%;float:left">
+                    <a href="~/Event/SingleEvent">
+                        <img src="~/References/dreamteam_logo.png" alt="Splash" style="width:50%; height:10%">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h4>
+                    @Model.Description
+                </h4>
+            </div>
+            <div style="width:40%;Text-align:left;float:left;">
+                <h4>Team information:</h4>
+                <div>
+                    @Model.Team
+                </div>
+                <div>
+                    @Model.Unifrom_Color
+                </div>
+            </div>
+            <div style="width:40%;Text-align:left;float:left;">
+                <h4>Related Documents:</h4>
+                <div href="~/Home/FAQ">
+                    @Model.Document1
+                </div>
+                <div href="~/Home/FAQ">
+                    @Model.Document2
+                </div>
+
+            </div>
+            <div style="width:20%;Text-align:left;float:left;">
+                <div class="thumbnail">
+
+                    <a href="https://www.google.com/maps/place/Tacoma+Public+Schools,+WA/47.2438899,-122.5305748,12z/data=!3m1!4b1!4m5!3m4!1s0x5490556b328ea36f:0x28ee5b1d832ed35e!8m2!3d47.2439606!4d-122.4656821">
+                        <img src="~/References/Maps.png" alt="Splash" style="width:100%">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div style="width:100%;Text-align:center;float:left;">
+                <div style="width:70%;Text-align:center;float:left;">
+                    <h1>@Model.EventName2 - @Model.EventDate2</h1>
+                </div>
+
+                <div style="Text-align:left;Width:30%;float:left">
+                    <a href="~/Event/SingleEvent">
+                        <img src="~/References/Housing.jpg" alt="Splash" style="width:100%">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h4>
+                    @Model.Description2
+                </h4>
+            </div>
+            <div style="width:40%;Text-align:left;float:left;">
+                <h4>Team information:</h4>
+                <div>
+                    @Model.Team2
+                </div>
+                <div>
+                    @Model.Unifrom_Color2
+                </div>
+            </div>
+            <div style="width:40%;Text-align:left;float:left;">
+                <h4>Related Documents:</h4>
+                <div href="~/Home/FAQ">
+                    @Model.Document1_2
+                </div>
+
+            </div>
+            <div style="width:20%;Text-align:left;float:left;">
+                <div class="thumbnail">
+
+                    <a href="https://www.google.com/maps/place/Seattle+University/47.6091799,-122.3195006,17z/data=!3m1!4b1!4m5!3m4!1s0x54906ac8cbf49ba1:0x43d4a2852f7dc041!8m2!3d47.6091799!4d-122.3173118">
+                        <img src="~/References/Maps.png" alt="Splash" style="width:100%">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div style="Text-align:center;Width:30%;float:left">
+        <html>
+        <head>
+            <style>
+                * {
+                    box-sizing: border-box;
+                }
+
+                ul {
+                    list-style-type: none;
+                }
+
+                body {
+                    font-family: Verdana, sans-serif;
+                }
+
+                .month {
+                    padding: 25px 25px;
+                    width: 100%;
+                    background: #0f0101;
+                    text-align: center;
+                }
+
+                    .month ul {
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                        .month ul li {
+                            color: white;
+                            font-size: 20px;
+                            text-transform: uppercase;
+                            letter-spacing: 3px;
+                        }
+
+                    .month .prev {
+                        float: left;
+                        padding-top: 10px;
+                    }
+
+                    .month .next {
+                        float: right;
+                        padding-top: 10px;
+                    }
+
+                .weekdays {
+                    margin: 0;
+                    padding: 5px 0;
+                    background-color: #ddd;
+                }
+
+                    .weekdays li {
+                        display: inline-block;
+                        width: 10.5%;
+                        color: #666;
+                        text-align: center;
+                    }
+
+                .days {
+                    padding: 5px 0;
+                    background: #eee;
+                    margin: 0;
+                }
+
+                    .days li {
+                        list-style-type: none;
+                        display: inline-block;
+                        width: 11.6%;
+                        text-align: center;
+                        margin-bottom: 5px;
+                        font-size: 12px;
+                        color: #777;
+                    }
+
+                        .days li .active {
+                            padding: 5px;
+                            background: #1abc9c;
+                            color: white !important
+                        }
+            </style>
+        </head>
+        <body>
+
+            <div class="month">
+                <ul>
+                    <li class="prev">&#10094;</li>
+                    <li class="next">&#10095;</li>
+                    <li>
+                        June<br>
+                        <span style="font-size:18px">2019</span>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="weekdays">
+                <li>Mo</li>
+                <li>Tu</li>
+                <li>We</li>
+                <li>Th</li>
+                <li>Fr</li>
+                <li>Sa</li>
+                <li>Su</li>
+            </ul>
+
+            <ul class="days">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li>1</li>
+                <li>2</li>
+                <li><span class="active">3</span></li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li>19</li>
+                <li>20</li>
+                <li>21</li>
+                <li>22</li>
+                <li>23</li>
+                <li>24</li>
+                <li>25</li>
+                <li>26</li>
+                <li>27</li>
+                <li>28</li>
+                <li>29</li>
+                <li>30</li>
+            </ul>
+
+        </body>
+    </html>
+    <div style="Text-align:left;Width:100%;float:left">
+        <a href="~/Task/SingleTask">
+            @Model.UserTask1
+        </a>
+
+    </div>
+    <div style="Text-align:left;Width:100%;float:left">
+        <a href="~/Task/SingleTask">
+            @Model.UserTask2
+        </a>
+
+    </div>
+</div>
+
+</div>
 </div>
