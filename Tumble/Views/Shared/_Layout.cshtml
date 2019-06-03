@@ -1,121 +1,117 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Volunteer Management Systems</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>@ViewBag.Title - Volunteer Management Systems</title>
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+    
+        <style>
+            body {
+              font-family: "Lato", sans-serif;
+            }
 
-</head>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-body {
-  font-family: "Lato", sans-serif;
-}
+            .sidenav {
+              height: 100%;
+              width: 0;
+              position: fixed;
+              z-index: 1;
+              top: 0;
+              left: 0;
+              background-color: #111;
+              overflow-x: hidden;
+              transition: 0.5s;
+              padding-top: 60px;
+            }
 
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
+            .sidenav a {
+              padding: 8px 8px 8px 32px;
+              text-decoration: none;
+              font-size: 25px;
+              color: #818181;
+              display: block;
+              transition: 0.3s;
+            }
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
+            .sidenav a:hover {
+              color: #f1f1f1;
+            }
 
-.sidenav a:hover {
-  color: #f1f1f1;
-}
+            .sidenav .closebtn {
+              position: absolute;
+              top: 0;
+              right: 25px;
+              font-size: 36px;
+              margin-left: 50px;
+            }
 
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
+            #main {
+              transition: margin-left .5s;
+              padding: 16px;
+            }
 
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
+        </style>
+    </head>
 
-    </style>
-</head>
-<body>
-    <div class="row">
-        <div class="col-lg-8"></div>
-        <div class="col-lg-4">
-            <a href='@Url.Action("Index", "Home")'>
-                <img src="~/References/head title.png" style="width:50%">
-            </a>
-        </div>
-    </div>
-
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <li>@Html.ActionLink("Home", "Index", "Home")</li>
-        <li>@Html.ActionLink("Profile", "Contact", "Home")</li>
-        <li>@Html.ActionLink("FAQ", "FAQ", "Home")</li>
-        <li>@Html.ActionLink("Event", "Index", "Event")</li>
-        <li>@Html.ActionLink("Task", "Index", "Task")</li>
-        <li>@Html.ActionLink("Report", "Index", "Report")</li>
-        <li>@Html.ActionLink("Team Management", "Index", "TeamManage")</li>
-    </div>
-
-    <div id="main">
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-    </div>
-
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("main").style.marginLeft = "0";
-        }
-    </script>
-
-</body>
-
-<div class="container body-content">
-    @RenderBody()
-    <hr />
-    <footer>
-
+    <body>
         <div class="row">
-            <div class="col-lg-2">&copy; @DateTime.Now.Year - Tumble</div>
-            <div class="col-lg-8">
-                <button type="button" class="btn btn-primary btn-block">Chat Room</button>
-            </div>
-            <div class="col-lg-2">
+            <div class="col-lg-8"></div>
+            <div class="col-lg-4">
                 <a href='@Url.Action("Index", "Home")'>
-                    <button type="button" class="btn btn-primary btn-block">Logout</button>
+                    <img src="~/References/head title.png" style="width:50%">
                 </a>
             </div>
         </div>
-    </footer>
-</div>
 
-@Scripts.Render("~/bundles/jquery")
-@Scripts.Render("~/bundles/bootstrap")
-@RenderSection("scripts", required: false)
-</body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="nav">
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("Profile", "Contact", "Home")</li>
+                <li>@Html.ActionLink("FAQ", "FAQ", "Home")</li>
+                <li>@Html.ActionLink("Event", "Index", "Event")</li>
+                <li>@Html.ActionLink("Task", "Index", "Task")</li>
+                <li>@Html.ActionLink("Report", "Index", "Report")</li>
+                <li>@Html.ActionLink("Team Management", "Index", "TeamManage")</li>
+            </ul>
+        </div>
+
+        <div id="main">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+            }
+        </script>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+
+            <div class="row">
+                <div class="col-lg-2">&copy; @DateTime.Now.Year - Tumble</div>
+                <div class="col-lg-8">
+                    <a href='@Url.Action("Index", "Login")' class="btn btn-success btn-block" role="button">Chat Room</a>
+                </div>
+                <div class="col-lg-2">
+                    <a href='@Url.Action("Index", "Login")' class="btn btn-default btn-block" role="button">Logout</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    </body>
 </html>
