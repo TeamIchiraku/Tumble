@@ -148,6 +148,7 @@
     <Content Include="References\Maps.PNG" />
     <Content Include="References\Report.png" />
     <Content Include="References\SingleEvent.png" />
+    <Content Include="References\Summary Events Content.png" />
     <Content Include="References\Summary Task Page%28Admin version%29.png" />
     <Content Include="References\SummaryEventPage.png" />
     <Content Include="References\TaskPage.PNG" />

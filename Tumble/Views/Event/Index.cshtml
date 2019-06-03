@@ -1,4 +1,4 @@
-﻿
+﻿@model Tumble.Models.HomeViewModel
 @{
     ViewBag.Title = "Index";
 }
@@ -41,21 +41,252 @@
 
             <br />
 
-            <div class="row" style="height: 250px; overflow-y: scroll;">
-                <a href="Event/SingleEvent">
-                    <img src="~/References/One Event Content.png" style="width:100%">
-                    <img src="~/References/One Event Content.png" style="width:100%">
-                    <img src="~/References/One Event Content.png" style="width:100%">
-                </a>
+            <div class="row" style="height: 500px; overflow-y: scroll;">
+                <div class="row bg-info" style="padding-top:35px;padding-bottom:35px;padding-left:10px; padding-right:10px">
+                    <div class="col-lg-6">
+                        <h3 style="text-align:center">Football Game Day</h3>
+                        <ul>
+
+                            <li>Team: Cheerleading Team</li>
+                            <li>Squad: Varsity Squad</li>
+                            <li>Description: </li>
+                            <li><img src="~/References/Summary Events Content.png" /></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="row">
+                            <br />
+                            <a href="~/Event/SingleEvent" button type="button" class="btn btn-success center-block">View Event</a>
+                            <br />
+                            <a href="~/Task/SingleTask" button type="button" class="btn btn-success center-block">View Task</a>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="thumbnail">
+
+                            <a href="https://www.google.com/maps/place/Seattle+University/47.6091799,-122.3195006,17z/data=!3m1!4b1!4m5!3m4!1s0x54906ac8cbf49ba1:0x43d4a2852f7dc041!8m2!3d47.6091799!4d-122.3173118">
+                                <img src="~/References/Maps.png" alt="Splash" style="width:100%">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <br />
+
+
+                <div class="row bg-info" style="padding-top:35px;padding-bottom:35px;padding-left:10px; padding-right:10px">
+                    <div class="col-lg-6">
+                        <h3 style="text-align:center">State Cheer Competition</h3>
+                        <ul>
+
+                            <li>Team: Cheerleading Team</li>
+                            <li>Squad: Varsity Squad</li>
+                            <li>Description: </li>
+                            <li><img src="~/References/Summary Events Content.png" /></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="row">
+                            <br />
+                            <a href="~/Event/SingleEvent" button type="button" class="btn btn-success center-block">View Event</a>
+                            <br />
+                            <a href="~/Task/SingleTask" button type="button" class="btn btn-success center-block">View Task</a>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="thumbnail">
+
+                            <a href="https://www.google.com/maps/place/Seattle+University/47.6091799,-122.3195006,17z/data=!3m1!4b1!4m5!3m4!1s0x54906ac8cbf49ba1:0x43d4a2852f7dc041!8m2!3d47.6091799!4d-122.3173118">
+                                <img src="~/References/Maps.png" alt="Splash" style="width:100%">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <br />
+
+                <div class="row bg-info" style="padding-top:35px;padding-bottom:35px;padding-left:10px; padding-right:10px">
+                    <div class="col-lg-6">
+                        <h3 style="text-align:center">Football Game Day</h3>
+                        <ul>
+
+                            <li>Team: Cheerleading Team</li>
+                            <li>Squad: Varsity Squad</li>
+                            <li>Description: </li>
+                            <li><img src="~/References/Summary Events Content.png" /></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="row">
+                            <br />
+                            <a href="~/Event/SingleEvent" button type="button" class="btn btn-success center-block">View Event</a>
+                            <br />
+                            <a href="~/Task/SingleTask" button type="button" class="btn btn-success center-block">View Task</a>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="thumbnail">
+
+                            <a href="https://www.google.com/maps/place/Seattle+University/47.6091799,-122.3195006,17z/data=!3m1!4b1!4m5!3m4!1s0x54906ac8cbf49ba1:0x43d4a2852f7dc041!8m2!3d47.6091799!4d-122.3173118">
+                                <img src="~/References/Maps.png" alt="Splash" style="width:100%">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
         </div>
         <div class="col-lg-1"></div>
 
-        <div class="col-lg-3">
-            <div class="row">
-                <img src="~/References/calendar.png" style="width:100%">
-            </div>
-            <br />
-        </div>
+        <div style="Text-align:center;Width:30%;float:left">
+            <html>
+            <head>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+
+                    ul {
+                        list-style-type: none;
+                    }
+
+                    body {
+                        font-family: Verdana, sans-serif;
+                    }
+
+                    .month {
+                        padding: 25px 25px;
+                        width: 100%;
+                        background: #0f0101;
+                        text-align: center;
+                    }
+
+                        .month ul {
+                            margin: 0;
+                            padding: 0;
+                        }
+
+                            .month ul li {
+                                color: white;
+                                font-size: 20px;
+                                text-transform: uppercase;
+                                letter-spacing: 3px;
+                            }
+
+                        .month .prev {
+                            float: left;
+                            padding-top: 10px;
+                        }
+
+                        .month .next {
+                            float: right;
+                            padding-top: 10px;
+                        }
+
+                    .weekdays {
+                        margin: 0;
+                        padding: 5px 0;
+                        background-color: #ddd;
+                    }
+
+                        .weekdays li {
+                            display: inline-block;
+                            width: 10.5%;
+                            color: #666;
+                            text-align: center;
+                        }
+
+                    .days {
+                        padding: 5px 0;
+                        background: #eee;
+                        margin: 0;
+                    }
+
+                        .days li {
+                            list-style-type: none;
+                            display: inline-block;
+                            width: 11.6%;
+                            text-align: center;
+                            margin-bottom: 5px;
+                            font-size: 12px;
+                            color: #777;
+                        }
+
+                            .days li .active {
+                                padding: 5px;
+                                background: #1abc9c;
+                                color: white !important
+                            }
+                </style>
+            </head>
+            <body>
+
+                <div class="month">
+                    <ul>
+                        <li class="prev">&#10094;</li>
+                        <li class="next">&#10095;</li>
+                        <li>
+                            June<br>
+                            <span style="font-size:18px">2019</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="weekdays">
+                    <li>Mo</li>
+                    <li>Tu</li>
+                    <li>We</li>
+                    <li>Th</li>
+                    <li>Fr</li>
+                    <li>Sa</li>
+                    <li>Su</li>
+                </ul>
+
+                <ul class="days">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li><span class="active">3</span></li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li>30</li>
+                </ul>
+
+                </body>
+            </html>
+           </div>
     </div>
