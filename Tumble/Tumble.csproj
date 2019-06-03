@@ -137,13 +137,17 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="One Event.png" />
     <Content Include="References\calendar.png" />
     <Content Include="References\FAQ%28Admin%29.png" />
     <Content Include="References\head title.png" />
     <Content Include="References\Invitation.png" />
     <Content Include="References\MainSplashPage %282%29.png" />
+    <Content Include="References\One Event Content.png" />
+    <Content Include="References\One Event.png" />
     <Content Include="References\Report.png" />
     <Content Include="References\SingleEvent.png" />
+    <Content Include="References\Summary Events Content.png" />
     <Content Include="References\Summary Task Page%28Admin version%29.png" />
     <Content Include="References\SummaryEventPage.png" />
     <Content Include="References\Team Management.png" />
