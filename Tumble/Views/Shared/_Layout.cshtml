@@ -57,10 +57,13 @@ body {
     </style>
 </head>
 <body>
-    <div class="thumbnail">
-        <a href= '@Url.Action("Index", "Home")'>
-            <img src="~/References/head title.png" style="width:20%">
-        </a>
+    <div class="row">
+        <div class="col-lg-8"></div>
+        <div class="col-lg-4">
+            <a href='@Url.Action("Index", "Home")'>
+                <img src="~/References/head title.png" style="width:50%">
+            </a>
+        </div>
     </div>
 
     <div id="mySidenav" class="sidenav">
@@ -98,13 +101,11 @@ body {
     <footer>
 
         <div class="row">
-            <div class="col-sm-4">@DateTime.Now.Year - Tumble</div>
-            <div class="col-sm-8">  
+            <div class="col-lg-4">&copy; @DateTime.Now.Year - Tumble</div>
+            <div class="col-lg-8">  
                 <button type="button" class="btn btn-primary btn-block">Chat Room</button> 
             </div>
         </div>
-
-        <p>&copy; </p>
     </footer>
 </div>
 
