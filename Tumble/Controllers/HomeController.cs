@@ -14,10 +14,21 @@ namespace Tumble.Controllers
             var myData = new HomeViewModel
             {
                 EventName = "State Championship",
-                Description = "blah blah blah",
-                UserTask1 = "7/22 - Food",
-                UserTask2 = "7/29 - Team Building"
+                EventDate = "7/22",
+                Description = "blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
+                UserTask1 = "7/22 - Bring Food",
+                UserTask2 = "7/29 - Team Building",
+                Team = "Team: " + "Varisty Squad A",
+                Unifrom_Color = "Uniform Colors: " + "Gold and Purple",
+                Document1 = "Waiver",
+                Document2 = "Travel Consent Form",
 
+                EventName2 = "House Event",
+                EventDate2 = "7/29",
+                Description2 = "blah blah blah blah blah blah blah blah blah blah blah blah",
+                Team2 = "Team: " + "Junior Varsity Squad A",
+                Unifrom_Color2 = "Uniform Colors: " + "N/A",
+                Document1_2 = "House Prep"
             };
             return View(myData);
         }
