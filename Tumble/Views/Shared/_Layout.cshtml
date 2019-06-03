@@ -96,7 +96,15 @@ body {
     @RenderBody()
     <hr />
     <footer>
-        <p>&copy; @DateTime.Now.Year - Tumble</p>
+
+        <div class="row">
+            <div class="col-sm-4">@DateTime.Now.Year - Tumble</div>
+            <div class="col-sm-8">  
+                <button type="button" class="btn btn-primary btn-block">Chat Room</button> 
+            </div>
+        </div>
+
+        <p>&copy; </p>
     </footer>
 </div>
 
