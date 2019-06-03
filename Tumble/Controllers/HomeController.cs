@@ -33,9 +33,8 @@ namespace Tumble.Controllers
             return View(myData);
         }
 
-        public ActionResult About()
+        public ActionResult Chat()
         {
-            ViewBag.Message = "Your application description page.";
 
             return View();
         }
