@@ -1,11 +1,88 @@
-﻿
+﻿@model Tumble.Models.SingleEventViewModel
 @{
     ViewBag.Title = "SingleEvent";
 }
 
-<div class="thumbnail">
-    <a href='@Url.Action("SingleTask", "Task")'>
-        <img src="~/References/SingleEvent.png" alt="Splash" style="width:100%" />
-    </a>
-</div>
 
+
+<style>
+    p.solid {
+        border-style: solid;
+        border-bottom: solid;
+        border-top: solid;
+        border-left: solid;
+        border-right: solid;
+    }
+</style>
+<p class="solid">
+    <h1 style="text-align:center">@Model.EventName</h1>
+    <div class="container">
+        <div class="row" style="text-align:left">
+            <label class="control-label col-lg-2" for="Description">Description:</label>
+
+            <div class="col-lg-8">@Model.Description</div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-lg-8" style="text-align:left">
+                <div class="row">
+                    <label class="control-label col-lg-2" for="Event Date">Event Date:</label>
+                    <div class="col-lg-8">@Model.EventDate</div>
+                </div>
+                <br />
+                <div class="row">
+                    <label class="control-label col-lg-2" for="Location">Location:</label>
+                    <div class="col-lg-8">@Model.Location</div>
+                </div>
+                <br />
+                <div class="row">
+                    <label class="control-label col-lg-2" for="Cost">Cost:</label>
+                    <div class="col-lg-8">@Model.Cost</div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <a href="https://www.google.com/maps/place/CenturyLink+Field/47.596767,-122.3102329,14z/data=!4m5!3m4!1s0x54906aa3b9f1182b:0xa636cd513bba22dc!8m2!3d47.5951523!4d-122.3316371">
+                    <img src="~/References/Maps.png" alt="Splash" style="width:100%">
+                </a>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <label class="control-label col-lg-2" for="Team">Team:</label>
+            <div class="col-lg-8">@Model.Team</div>
+        </div>
+        <br />
+        <div class="row">
+            <label class="control-label col-lg-2" for="Squad">Squad:</label>
+            <div class="col-lg-8">@Model.Squad</div>
+        </div>
+        <div class="row">
+            <label class="control-label col-lg-2" for="Uniform Color">Uniform Color:</label>
+            <div class="col-lg-8">@Model.Unifrom_Color</div>
+        </div>
+
+
+    </div>
+    <br />
+    <div class="container">
+        <div class="row">
+            <label class="control-label col-lg-2" for="Task">Task:</label>
+            <div class="col-lg-4">
+                <a href='@Url.Action("SingleTask", "Task")'>
+                    <img src="~/References/TaskTable.png" style="width:100%" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-lg-6" style="text-align:left">
+            <a href="~/Event/SingleEvent" button type="button" class="btn btn-default">Previous Event</a>
+        </div>
+        <div class="col-lg-6" style="text-align:right">
+            <a href="~/Event/SingleEvent" button type="button" class="btn btn-default">Next Event</a>
+        </div>
+    </div>
+    
+</p>

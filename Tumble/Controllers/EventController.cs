@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Tumble.Models;
 
 namespace Tumble.Controllers
 {
@@ -17,7 +18,19 @@ namespace Tumble.Controllers
         // GET: Single Event
         public ActionResult SingleEvent()
         {
-            return View();
+            var myData = new SingleEventViewModel
+            {
+                EventName = "Football Game Day",
+                EventDate = DateTime.Parse("8/22/2019 1:30:00 PM",
+                          System.Globalization.CultureInfo.InvariantCulture),
+                Team =  "Varisty",
+                Squad = "Squad A",
+                Unifrom_Color = "Gold and Purple",
+                Description = "blah balh blah balh balh blah balh blah balh balh",
+                Location = "3800 Montlake Blvd NE, Seattle, WA 98195",
+                Cost = "$10.00",
+            };
+            return View(myData);
         }
     }
 }
