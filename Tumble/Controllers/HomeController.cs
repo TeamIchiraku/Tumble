@@ -15,6 +15,7 @@ namespace Tumble.Controllers
             {
                 EventName = "State Championship",
                 EventDate = "7/22",
+                Address = "Tacoma Public Schools, WA",
                 Description = "blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
                 UserTask1 = "7/22 - Bring Food",
                 UserTask2 = "7/29 - Team Building",
@@ -24,6 +25,7 @@ namespace Tumble.Controllers
                 Document2 = "Travel Consent Form",
 
                 EventName2 = "House Event",
+                Address2 = "901 12th Ave, Seattle, WA 98122",
                 EventDate2 = "7/29",
                 Description2 = "blah blah blah blah blah blah blah blah blah blah blah blah",
                 Team2 = "Team: " + "Junior Varsity Squad A",
@@ -50,11 +52,11 @@ namespace Tumble.Controllers
                 LastName = "Doe",
                 PhoneNumber = "123-455-1234",
                 Student = "Janice Doe",
-                Address = "98123 1st st",
+                Address = "901 12th Ave",
                 Address2 = " ",
-                City = "Lynnwood",
+                City = "Seattle",
                 St = "WA",
-                Zip = 98253,
+                Zip = 98122,
                 emailContactmethod = true,
                 phoneContactmethod = false,
                 pwd = "***************"

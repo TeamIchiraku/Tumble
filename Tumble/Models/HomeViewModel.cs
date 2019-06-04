@@ -10,12 +10,14 @@ namespace Tumble.Models
         public string EventName;
         public string EventDate;
         public string Description;
+        public string Address;
         public string Team;
         public string Unifrom_Color;
         public string Document1;
         public string Document2;
 
         public string EventName2;
+        public string Address2;
         public string EventDate2;
         public string Description2;
         public string Team2;
