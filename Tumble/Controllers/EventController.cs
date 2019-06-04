@@ -27,7 +27,7 @@ namespace Tumble.Controllers
                 Squad = "Squad A",
                 Unifrom_Color = "Gold and Purple",
                 Description = "blah balh blah balh balh blah balh blah balh balh",
-                Location = "3800 Montlake Blvd NE, Seattle, WA 98195",
+                Location = "800 Occidental Ave S, Seattle, WA 98134",
                 Cost = "$10.00",
             };
             return View(myData);
