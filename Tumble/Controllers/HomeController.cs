@@ -13,12 +13,12 @@ namespace Tumble.Controllers
         {
             var myData = new HomeViewModel
             {
-                EventName = "State Championship",
-                EventDate = "7/22",
+                EventName = "Football Game Day",
+                EventDate = "8/22",
                 Address = "Tacoma Public Schools, WA",
                 Description = "blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
-                UserTask1 = "7/22 - Bring Food",
-                UserTask2 = "7/29 - Team Building",
+                UserTask1 = "7/29 - Team Building",
+                UserTask2 = "8/22 - Carpool Duty",
                 Team = "Team: " + "Varisty Squad A",
                 Unifrom_Color = "Uniform Colors: " + "Gold and Purple",
                 Document1 = "Waiver",

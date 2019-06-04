@@ -29,4 +29,23 @@ namespace Tumble.Models
         public string UserTask2;
 
     }
+
+    public class UserProfile
+    {
+        public string Email;
+        public string FirstName;
+        public string LastName;
+        public string PhoneNumber;
+        public string pwd;
+        public string Student;
+        public string Address;
+        public string Address2;
+        public string City;
+        public string St;
+        public int Zip;
+        public bool phoneContactmethod;
+        public bool emailContactmethod;
+        public string Restrictions;
+
+    }
 }
