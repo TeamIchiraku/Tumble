@@ -1,4 +1,5 @@
-﻿@{
+﻿@model Tumble.Models.UserProfile        
+@{
     ViewBag.Title = "Profile";
 }
 <!DOCTYPE html>
@@ -19,31 +20,31 @@
             <div class="form-group">
                 <label class="control-label col-sm-2" for="email">Email:</label>
                 <div class="col-sm-10">
-                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                    <input type="email" class="form-control" id="email" placeholder=@Model.Email name="email">
                 </div>
             </div>
             <div class="form-group">
                 <label class="control-label col-sm-2" for="email">Phone:</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="phoneNumber" placeholder="Enter Phone Number" name="phoneNumber">
+                    <input type="text" class="form-control" id="phoneNumber" placeholder=@Model.PhoneNumber name="phoneNumber">
                 </div>
             </div>
             <div class="form-group">
                 <label class="control-label col-sm-2" for="email">First Name:</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="FName" placeholder="First Name" name="Fname">
+                    <input type="text" class="form-control" id="FName" placeholder=@Model.FirstName name="Fname">
                 </div>
             </div>
             <div class="form-group">
                 <label class="control-label col-sm-2" for="email">Last Name:</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="LName" placeholder="Last Name" name="Lname">
+                    <input type="text" class="form-control" id="LName" placeholder=@Model.LastName name="Lname">
                 </div>
             </div>
             <div class="form-group">
                 <label class="control-label col-sm-2" for="pwd">Password:</label>
                 <div class="col-sm-10">
-                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                    <input type="password" class="form-control" id="pwd" placeholder=@Model.pwd name="pwd">
                 </div>
             </div>
             <div class="form-group">
@@ -55,43 +56,43 @@
             <div class="form-group">
                 <label class="control-label col-sm-2" for="email">Student:</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="StudentName" placeholder="Student Name" name="Student Name">
+                    <input type="text" class="form-control" id="StudentName" placeholder=@Model.Student name="Student Name">
                 </div>
             </div>
             <div class="form-group">
                 <label class="control-label col-sm-2" for="address">Street Address:</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="Address" placeholder="Address" name="Address">
+                    <input type="text" class="form-control" id="Address" placeholder=@Model.Address name="Address">
                 </div>
             </div>
             <div class="form-group">
                 <label class="control-label col-sm-2" for="address2">Address 2:</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="Address2" placeholder="Address Cont" name="Address2">
+                    <input type="text" class="form-control" id="Address2" placeholder=@Model.Address2 name="Address2">
                 </div>
             </div>
             <div class="form-group">
-                    <div class="col-sm-3">
-                        <label class="control-label col-sm-2" for="City">City:</label>
-                        <input type="text" class="form-control" id="City" placeholder="City" name="City">
-                    </div>
-
-                    <div class="col-sm-1">
-                        <label class="control-label col-sm-2" for="St">State:</label>
-                        <input type="text" class="form-control" id="state" placeholder="State" name="State">
-                    </div>
-
-                    <div class="col-sm-2">
-                        <label class="control-label col-sm-2" for="Zip">Zip:</label>
-                        <input type="number" class="form-control" id="Zip" placeholder="Zip" name="Zip">
-                    </div>
+                <div class="col-sm-3">
+                    <label class="control-label col-sm-2" for="City">City:</label>
+                    <input type="text" class="form-control" id="City" placeholder=@Model.City name="City">
                 </div>
+
+                <div class="col-sm-1">
+                    <label class="control-label col-sm-2" for="St">State:</label>
+                    <input type="text" class="form-control" id="state" placeholder=@Model.St name="State">
+                </div>
+
+                <div class="col-sm-2">
+                    <label class="control-label col-sm-2" for="Zip">Zip:</label>
+                    <input type="number" class="form-control" id="Zip" placeholder=@Model.Zip name="Zip">
+                </div>
+            </div>
             <div class="form-group">
                 <label class="control-label col-sm-2" for="ContactPref">Contact Method:</label>
                 <label class="checkbox-inline"><input type="checkbox" value="">Email</label>
                 <label class="checkbox-inline"><input type="checkbox" value="">Phone</label>
             </div>
-            
+
             <div class="form-group">
                 <label class="control-label col-sm-2" for="email">Restrictions:</label>
                 <div class="text-justify">

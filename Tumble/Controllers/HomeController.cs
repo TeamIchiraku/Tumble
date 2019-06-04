@@ -43,7 +43,24 @@ namespace Tumble.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
-            return View();
+            var myData = new UserProfile
+            {
+                Email = "JohnDoe@gmail.com",
+                FirstName = "John",
+                LastName = "Doe",
+                PhoneNumber = "123-455-1234",
+                Student = "Janice Doe",
+                Address = "98123 1st st",
+                Address2 = " ",
+                City = "Lynnwood",
+                St = "WA",
+                Zip = 98253,
+                emailContactmethod = true,
+                phoneContactmethod = false,
+                pwd = "***************"
+            };
+
+            return View(myData);
         }
 
         public ActionResult FAQ()
