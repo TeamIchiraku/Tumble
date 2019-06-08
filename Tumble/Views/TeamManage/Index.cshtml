@@ -3,9 +3,120 @@
     ViewBag.Title = "Index";
 }
 
-    <div class="thumbnail">
-        <a href= "TeamManage/AddUser">
-            <img src="~/References/Team Management.png" alt="Splash" style="width:100%">
-        </a>
-    </div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9">
+            <div class="row">
 
+                <div class="col-lg-2"></div>
+
+                <div class="col-lg-4">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-success btn-block btn-lg">
+                            Add Squad
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-success btn-block btn-lg">
+                            Add Stunt Group
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-lg-2"></div>
+
+            </div>
+
+            <br />
+
+            <div class="row" style="height: 500px; overflow-y: scroll;">
+
+                <div class="row bg-info" style="padding-top:35px;padding-bottom:35px;padding-left:5px; padding-right:5px">
+
+                    <div class="col-lg-1"></div>
+
+                    <div class="col-lg-6">
+                        <h3>Varsity Squad</h3>
+                        <ul>
+                            <li>Stunt Group A</li>
+                            <li>Stunt Group B</li>
+                            <li>Stunt Group C</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-1"></div>
+
+                </div>
+
+                <br />
+
+                <div class="row bg-info" style="padding-top:35px;padding-bottom:35px;padding-left:5px; padding-right:5px">
+
+                    <div class="col-lg-1"></div>
+
+                    <div class="col-lg-6">
+                        <h3>Junior Varsity Squad</h3>
+                        <ul>
+                            <li>Stunt Group A</li>
+                            <li>Stunt Group B</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-1"></div>
+
+                </div>
+
+                <br />
+
+                <div class="row bg-info" style="padding-top:35px;padding-bottom:35px;padding-left:5px; padding-right:5px">
+
+                    <div class="col-lg-1"></div>
+
+                    <div class="col-lg-6">
+                        <h3>Freshman Squad</h3>
+                        <ul>
+                            <li>Stunt Group A</li>
+                            <li>Stunt Group B</li>
+                            <li>Stunt Group C</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-1"></div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-lg-3">
+
+            <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10">
+                    <a href='@Url.Action("Index", "Login")' class="btn btn-primary btn-lg btn-block" role="button">Manage Users</a>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10">
+                    <a href='@Url.Action("Index", "Login")' class="btn btn-primary btn-lg btn-block" role="button">Manage Team Roster</a>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10">
+                    <a href='@Url.Action("Index", "Login")' class="btn btn-primary btn-lg btn-block" role="button">View Team Roster</a>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+
+        </div>
+    </div>
+</div>
