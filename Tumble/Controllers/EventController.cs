@@ -32,5 +32,10 @@ namespace Tumble.Controllers
             };
             return View(myData);
         }
+
+        public ActionResult AddEventView()
+        {
+            return View();
+        }
     }
 }

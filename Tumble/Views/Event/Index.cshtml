@@ -9,7 +9,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-lg-8">
+        <div style="Text-align:center;Width:60%;float:left">
             <div class="row">
                 <div class="col-lg-2">
                     <div class="dropdown">
@@ -142,7 +142,8 @@
             </div>
 
         </div>
-        <div class="col-lg-1"></div>
+        
+        <div style="Text-align:center;Width:10%;float:left"></div>
 
         <div style="Text-align:center;Width:30%;float:left">
             <html>
@@ -286,7 +287,23 @@
                     <li>30</li>
                 </ul>
 
-                </body>
-            </html>
-           </div>
+            </body>
+        </html>
+        <br />
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <a href='@Url.Action("AddEventView", "Event")' class="btn btn-primary btn-lg btn-block" role="button">Add Event</a>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <a href='@Url.Action("Index", "Login")' class="btn btn-primary btn-lg btn-block" role="button">Import Events</a>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+        </div>
     </div>
