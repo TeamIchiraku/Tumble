@@ -60,7 +60,8 @@
 
     <body>
         <div class="row">
-            <div class="col-lg-8"></div>
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4"><button onclick="AdminToggle()">Try it</button></div>
             <div class="col-lg-4">
                 <a href='@Url.Action("Index", "Home")'>
                     <img src="~/References/head title.png" style="width:50%">
@@ -70,7 +71,7 @@
 
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <ul class="nav">
+            <div id="SideNav1" class="nav">
                 <li>@Html.ActionLink("Home", "Index", "Home")</li>
                 <li>@Html.ActionLink("Profile", "Contact", "Home")</li>
                 <li>@Html.ActionLink("FAQ", "FAQ", "Home")</li>
@@ -78,7 +79,15 @@
                 <li>@Html.ActionLink("Task", "Index", "Task")</li>
                 <li>@Html.ActionLink("Report", "Index", "Report")</li>
                 <li>@Html.ActionLink("Team Management", "Index", "TeamManage")</li>
-            </ul>
+            </div>
+            <div id="SideNav2" class="nav" style="display:none;">
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("Profile", "Contact", "Home")</li>
+                <li>@Html.ActionLink("FAQ", "FAQ", "Home")</li>
+                <li>@Html.ActionLink("Event", "Index", "Event")</li>
+                <li>@Html.ActionLink("Task", "Index", "Task")</li>
+                <li>@Html.ActionLink("Team Management", "Index", "TeamManage")</li>
+            </div>
         </div>
 
         <div id="main">
@@ -94,7 +103,19 @@
             function closeNav() {
                 document.getElementById("mySidenav").style.width = "0";
                 document.getElementById("main").style.marginLeft = "0";
-            }
+                }
+
+    function AdminToggle() {
+        var x = document.getElementById("SideNav1");
+        var y = document.getElementById("SideNav2");
+  if (x.style.display === "none") {
+      x.style.display = "block";
+      y.style.display = "none";
+  } else {
+      x.style.display = "none";
+      y.style.display = "block";
+  }
+}
         </script>
 
     <div class="container body-content">
