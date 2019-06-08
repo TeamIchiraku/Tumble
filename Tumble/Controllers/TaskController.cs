@@ -5,6 +5,7 @@ using System.Web;
 using Tumble.Models;
 using System.Web.Mvc;
 
+
 namespace Tumble.Controllers
 {
     public class TaskController : Controller
@@ -30,6 +31,22 @@ namespace Tumble.Controllers
                 FAQDoc = "Food Prep"
 
 
+            };
+            return View(myData);
+        }
+
+        public ActionResult AssignTask()
+        {
+            var myData = new AssignTaskModel
+            {
+                TaskName1 = "CarpoolDuty",
+                TaskName2 = "Food Supply",
+                TaskName3 = " Clean Up",
+                TaskDescription = "blah balh blah balh balh blah balh blah balh balh",
+                Req1 = "Somthing",
+                FAQDoc = "FAQ Document",
+                User1 = "Bob",
+                User2 = "John"
             };
             return View(myData);
         }
