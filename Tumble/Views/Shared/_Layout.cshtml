@@ -61,7 +61,7 @@
     <body>
         <div class="row">
             <div class="col-lg-4"></div>
-            <div class="col-lg-4"><button onclick="AdminToggle()">Try it</button></div>
+            <div class="col-lg-4"><button onclick="AdminToggle()">Admin View</button></div>
             <div class="col-lg-4">
                 <a href='@Url.Action("Index", "Home")'>
                     <img src="~/References/head title.png" style="width:50%">
@@ -108,13 +108,27 @@
     function AdminToggle() {
         var x = document.getElementById("SideNav1");
         var y = document.getElementById("SideNav2");
+        var aTask = document.getElementById("AddTask");
+        var iTask = document.getElementById("ImportTask");
+        var eTask = document.getElementById("ExportTask");
+        var asTask = document.getElementById("AssignTask");
   if (x.style.display === "none") {
       x.style.display = "block";
       y.style.display = "none";
+      aTask.style.display = "block";
+      iTask.style.display = "block";
+      eTask.style.display = "block";
+      asTask.style.display = "block";
   } else {
       x.style.display = "none";
       y.style.display = "block";
-  }
+      aTask.style.display = "none";
+      iTask.style.display = "none";
+      eTask.style.display = "none";
+      asTask.style.display = "none";
+
+        }
+        SingleEventEdit();
 }
         </script>
 
