@@ -14,13 +14,13 @@
                 <div class="col-lg-2"></div>
 
                 <div class="col-lg-4">
-                    <button type="button" class="btn btn-success btn-block btn-lg">
+                    <button id="ExportTask" type="button" class="btn btn-success btn-block btn-lg">
                         Add Squad
                     </button>
                 </div>
 
                 <div class="col-lg-4">
-                    <button type="button" class="btn btn-success btn-block btn-lg">
+                    <button id="AssignTask" type="button" class="btn btn-success btn-block btn-lg">
                         Add Stunt Group
                     </button>
                 </div>
@@ -39,7 +39,7 @@
                     <div class="card bg-light text-dark">
                         <div class="row no-gutters">
                             <div class="col-lg-4">
-                                <img src="//placehold.it/200" class="img-fluid" alt="">
+                                <img src="~/References/varsity.jpg" class="img-fluid" alt="">
                             </div>
                             <div class="col-lg-8">
                                 <div class="card-block px-2">
@@ -76,7 +76,7 @@
                     <div class="card bg-light text-dark">
                         <div class="row no-gutters">
                             <div class="col-lg-4">
-                                <img src="//placehold.it/200" class="img-fluid" alt="">
+                                <img src="~/References/junior.jpg" class="img-fluid" alt="">
                             </div>
                             <div class="col-lg-8">
                                 <div class="card-block px-2">
@@ -105,7 +105,7 @@
                     <div class="card bg-light text-dark">
                         <div class="row no-gutters">
                             <div class="col-lg-4">
-                                <img src="//placehold.it/200" class="img-fluid" alt="">
+                                <img src="~/References/freshman.jpg" class="img-fluid" alt="">
                             </div>
                             <div class="col-lg-8">
                                 <div class="card-block px-2">
@@ -178,7 +178,7 @@
             <div class="row">
                 <div class="col-lg-1"></div>
                 <div class="col-lg-10">
-                    <a href='@Url.Action("Index", "Login")' class="btn btn-primary btn-lg btn-block" role="button">Manage Users</a>
+                    <a id="AddTask" href='@Url.Action("Index", "Login")' class="btn btn-primary btn-lg btn-block" role="button">Manage Users</a>
                 </div>
                 <div class="col-lg-1"></div>
             </div>
@@ -186,7 +186,7 @@
             <div class="row">
                 <div class="col-lg-1"></div>
                 <div class="col-lg-10">
-                    <a href='@Url.Action("Index", "Login")' class="btn btn-primary btn-lg btn-block" role="button">Manage Team Roster</a>
+                    <a id="ImportTask" href='@Url.Action("Index", "Login")' class="btn btn-primary btn-lg btn-block" role="button">Manage Team Roster</a>
                 </div>
                 <div class="col-lg-1"></div>
             </div>
