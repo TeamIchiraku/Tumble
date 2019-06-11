@@ -19,5 +19,10 @@ namespace Tumble.Controllers
         {
             return View();
         }
+
+        public ActionResult ManageUser()
+        {
+            return View();
+        }
     }
 }
