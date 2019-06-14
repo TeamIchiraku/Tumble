@@ -112,6 +112,9 @@
         var iTask = document.getElementById("ImportTask");
         var eTask = document.getElementById("ExportTask");
         var asTask = document.getElementById("AssignTask");
+        var aDoc = document.getElementById("AddReqs");
+        var aReq = document.getElementById("AddDocument");
+        var EditTask = document.getElementById("singleTaskEdit");
   if (x.style.display === "none") {
       x.style.display = "block";
       y.style.display = "none";
@@ -119,6 +122,9 @@
       iTask.style.display = "block";
       eTask.style.display = "block";
       asTask.style.display = "block";
+      aDoc.style.display = "block";
+      aReq.style.display = "block";
+      EditTask.style.display = "block";
   } else {
       x.style.display = "none";
       y.style.display = "block";
@@ -126,9 +132,10 @@
       iTask.style.display = "none";
       eTask.style.display = "none";
       asTask.style.display = "none";
-
+      aDoc.style = "display: none";
+      aReq.style = "display: none";
+      EditTask.style = "display: none";
         }
-        SingleEventEdit();
 }
         </script>
 
